@@ -21,6 +21,14 @@ app.use('/groups', GroupRouter().registerRoutes());
 app.use('/users', UserRouter().registerRoutes());
 app.use('/auth', AuthRouter().registerRoutes());
 
+app.get(
+  "/health",
+  (req, res) => {
+      res.status(200).send("Version 1.0 :)");
+  }
+);
+
+
 app.listen(PORT, () => {
   console.log(`Express server running on port http://localhost:${PORT} 🚀`);
 });

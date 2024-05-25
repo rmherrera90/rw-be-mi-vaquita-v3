@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "babel src -d dist && node dist/app.js",
-    "dev": "nodemon --exec babel-node src/app.js",
-    "migrations": "node src/utils/migrations.js"
+    "start": "babel src -d dist && node dist/app.js"
   },
   "keywords": [],
   "author": "WWC Medellín",
