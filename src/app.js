@@ -24,11 +24,11 @@ app.use('/auth', AuthRouter().registerRoutes());
 app.get(
   "/health",
   (req, res) => {
-      res.status(200).send("Version 1.0 :)");
+      res.status(200).send("Version 2.0 :)");
   }
 );
 
 
 app.listen(PORT, () => {
-  console.log(`Express server running on port http://localhost:${PORT} 🚀`);
+  console.log(`Express server running on port ${PORT} 🚀`);
 });
